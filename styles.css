@@ -9,8 +9,8 @@
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 250px 6fr;
-    grid-template-rows: 200px 6fr;
+    grid-template-columns: minmax(200px, .75fr) 6fr;
+    grid-template-rows: .75fr 6fr;
 }
 
 .sidebar{
@@ -29,6 +29,67 @@
 
 .header{
     background-color: rgb(24, 24, 24);
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.headtopleft{
+    grid-column: 1 / 2;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.headtopright{
+    grid-column: 2 / 3;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+    padding-right:100px;
+}
+
+.headbottomleft{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    align-items: center;
+}
+
+.pic{
+    grid-row: 1 / 4;
+    justify-self: center;
+}
+
+.hi{
+    grid-row: 2/3;
+    align-self: flex-end;
+}
+
+.user{
+    grid-row: 3 / 4;
+    align-self: flex-start;
+}
+
+.headbottomright{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    gap: 8px;
+}
+
+button{
+    border-radius: 10px;
+    background-color:  rgb(218, 16, 16);
+    padding: 8px 16px;
 }
 
 .main{
