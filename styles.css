@@ -46,7 +46,7 @@
 
 .headtopleft{
     grid-column: 1 / 2;
-    padding-left: 100px;
+    padding-left: 40px;
     padding-top: 10px;
     align-self: end;
 }
@@ -62,17 +62,17 @@ input{
     display: flex;
     justify-content: end;
     align-items: end;
-    padding-right:100px;
+    padding-right:20px;
 }
 
 .headbottomleft{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 140px 4fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
 }
 
-.pic{
+.headbottomleft svg{
     grid-row: 1 / 4;
     justify-self: center;
 }
@@ -90,7 +90,7 @@ input{
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
-    margin-right: 100px;
+    margin-right: 20px;
 }
 
 button{
@@ -191,4 +191,19 @@ svg{
 
 .mid, .bottom{
     padding-left: 15px;
+}
+
+.headtopleft{
+    display: flex;
+    gap: 10px;
+}
+
+.headtopleft svg,
+.headtopright svg,
+.headbottomleft{
+    fill: white;
+}
+
+.headbottomleft svg{
+    height: 100px;
 }
