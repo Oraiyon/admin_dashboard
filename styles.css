@@ -24,7 +24,7 @@
 
 .top{
     align-self: start;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .mid, .bottom{
@@ -34,7 +34,7 @@
 }
 
 .bottom{
-    padding-top: 36px;
+    padding-top: 100px;
 }
 
 .header{
@@ -128,6 +128,11 @@ button{
     border-radius: 8px;
     box-shadow: 3px 3px rgb(34, 34, 34);
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text p{
     color: rgb(211, 211, 211);
 }
 
@@ -202,7 +207,8 @@ svg{
 .headtopleft svg,
 .headtopright svg,
 .headbottomleft svg,
-.trend svg{
+.trend svg,
+.project svg{
     fill: white;
 }
 
@@ -232,4 +238,22 @@ svg{
 .trend h5,
 .trend p{
     padding-left: 20px;
+}
+
+.text{
+    grid-column: 1 / 3;
+}
+
+.icons{
+    grid-column: 2;
+    justify-self: end;
+    align-self: end;
+}
+
+.icons svg{
+    padding-right: 20px;
+}
+
+.icons svg:last-child{
+    padding: 0;
 }
