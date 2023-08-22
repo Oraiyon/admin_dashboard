@@ -113,7 +113,7 @@ button{
 .leftgrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .01fr 1fr 1fr 1fr;
+    grid-template-rows: .01fr .75fr .75fr .75fr;
     gap: 20px;
     margin: 20px 0 20px 20px;
     grid-row: 1 / 3;
@@ -152,4 +152,23 @@ button{
 
 .announcements p:last-child{
     padding-bottom: 0;
+}
+
+.rightgridbottom{
+    display: grid;
+    grid-template-rows: .01fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.people{
+    background-color: rgb(78, 78, 78);
+    border-radius: 8px;
+    box-shadow: 3px 3px rgb(34, 34, 34);
+    padding: 20px 20px 20px 90px;
+    margin-bottom: 20px;
+}
+
+.people p{
+    padding-bottom: 40px;
 }
