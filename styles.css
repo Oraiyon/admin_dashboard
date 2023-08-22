@@ -17,17 +17,14 @@
     background-color: rgb(218, 16, 16);
     grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 1fr 2.25fr 6.75fr;
-    padding-left: 90px;
+    grid-template-rows: .75fr 2.25fr 6.75fr;
+    padding-left: 20px;
     font-size: 1.1rem;
 }
 
 .top{
-    display: flex;
-}
-
-.top > h2{
-    align-self: center;
+    align-self: start;
+    padding-top: 10px;
 }
 
 .mid, .bottom{
@@ -174,4 +171,24 @@ button{
 
 .people p{
     padding-bottom: 40px;
+}
+
+svg{
+    height: 30px;
+}
+
+.top svg{
+    height: 60px;
+}
+
+.top,
+.mid div,
+.bottom div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mid, .bottom{
+    padding-left: 15px;
 }
